@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Video Carousel Remover",
+  "version": "1.0",
+  "description": "Removes the f***ing video carousel from LinkedIn",
+  "content_scripts": [
+    {
+      "matches": ["*://www.linkedin.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["scripting"],
+  "author": "Bernhard Schönberger"
+}
